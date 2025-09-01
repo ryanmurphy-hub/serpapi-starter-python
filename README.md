@@ -1,3 +1,7 @@
+![Build](https://github.com/ryanmurphy-hub/serpapi-starter-python/actions/workflows/ci.yml/badge.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+
 # SerpApi Starter (Python)
 
 This repository is a minimal, production-ready Python starter for working with [SerpApi](https://serpapi.com/).  
