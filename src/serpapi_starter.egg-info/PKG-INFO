@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: serpapi-starter
+Version: 0.1.0
+Summary: Tiny SerpApi starter showing a clean layout, env-based auth, a basic search, and tests.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.31.0
+Dynamic: license-file
+
+# SerpApi Starter (Python)
+
+Tiny starter showing a clean layout, env-based auth, a basic search, and tests.
+
+## Setup
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -e . pytest requests
+cp .env.example .env  # add your SERPAPI_API_KEY
+```
+
+## Run
+```bash
+python examples/basic_search.py
+```
+
+## Test
+```bash
+pytest
+```

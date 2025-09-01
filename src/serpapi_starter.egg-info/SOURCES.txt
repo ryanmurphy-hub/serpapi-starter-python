@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/serpapi_starter/__init__.py
+src/serpapi_starter/search.py
+src/serpapi_starter.egg-info/PKG-INFO
+src/serpapi_starter.egg-info/SOURCES.txt
+src/serpapi_starter.egg-info/dependency_links.txt
+src/serpapi_starter.egg-info/requires.txt
+src/serpapi_starter.egg-info/top_level.txt
+tests/test_search.py
