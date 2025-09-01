@@ -6,7 +6,7 @@ It demonstrates clean project structure, environment-based authentication, examp
 ---
 
 ## Features
-- 🔑 API key authentication via environment variable (`SERPAPI_API_KEY`)
+- 🔑 API key authentication via `.env` file (handled by [python-dotenv](https://pypi.org/project/python-dotenv/))
 - 📦 Organized Python package layout (`src/serpapi_starter`)
 - 🧪 Basic unit test with `pytest`
 - ⚙️ GitHub Actions workflow for CI
@@ -18,7 +18,8 @@ It demonstrates clean project structure, environment-based authentication, examp
 
 Clone the repository and create a virtual environment:
 
-```bash
+```powershell
 git clone https://github.com/your-username/serpapi-starter-python.git
 cd serpapi-starter-python
-python -m venv .venv && source .venv/bin/activate
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
