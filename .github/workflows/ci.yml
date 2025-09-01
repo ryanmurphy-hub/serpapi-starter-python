@@ -34,15 +34,13 @@ jobs:
       - name: Install deps
         run: pip install -e . pytest requests python-dotenv
 
-      - name: Sanity import check
-        run: |
-          python - <<'PY'
-          import sys, platform
-          print("Python", sys.version)
-          print("Platform", platform.platform())
-          import requests, dotenv
-          print("imports ok: requests, dotenv")
-          PY
+      - name: Sanity import check (cross-platform)
+        run: >
+          python -c "import sys, platform;
+          print('Python', sys.version);
+          print('Platform', platform.platform());
+          import requests, dotenv;
+          print('imports ok: requests, dotenv')"
 
       - name: Run tests
         run: pytest -q
