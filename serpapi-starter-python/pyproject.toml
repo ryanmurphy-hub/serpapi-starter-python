@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "serpapi-starter"
+version = "0.1.0"
+description = "Tiny SerpApi starter showing a clean layout, env-based auth, a basic search, and tests."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31.0"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
