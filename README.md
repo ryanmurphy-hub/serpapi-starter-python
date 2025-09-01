@@ -1,8 +1,13 @@
+# SerpApi Starter Python
+
+![Python](https://img.shields.io/badge/python-3.11-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![GitHub stars](https://img.shields.io/github/stars/ryanmurphy-hub/serpapi-starter-python?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/ryanmurphy-hub/serpapi-starter-python)
 ![Build](https://github.com/ryanmurphy-hub/serpapi-starter-python/actions/workflows/ci.yml/badge.svg)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
+Minimal Python starter with CI, tests, and examples.
 
-# SerpApi Starter (Python)
 
 This repository is a minimal, production-ready Python starter for working with [SerpApi](https://serpapi.com/).  
 It demonstrates clean project structure, environment-based authentication, example usage, tests, and GitHub Actions CI.
