@@ -15,7 +15,7 @@ jobs:
         python: ["3.10", "3.11"]
 
     env:
-      SERPAPI_API_KEY: ""            # keep CI independent of secrets
+      SERPAPI_API_KEY: ""            # tests don't need a real key right now
       PIP_DISABLE_PIP_VERSION_CHECK: "1"
       PYTHONUTF8: "1"
 
@@ -33,6 +33,15 @@ jobs:
 
       - name: Install deps
         run: pip install -e . pytest requests python-dotenv
+
+      - name: Sanity import check
+        run: python - << 'PY'
+import sys, platform
+print("Python", sys.version)
+print("Platform", platform.platform())
+import requests, dotenv
+print("imports ok: requests, dotenv")
+PY
 
       - name: Run tests
         run: pytest -q
