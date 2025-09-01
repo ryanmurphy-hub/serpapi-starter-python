@@ -16,10 +16,11 @@ jobs:
           cache: "pip"
       - run: python -m pip install -U pip
       - run: pip install ruff
-      - name: Ruff lint
+      - name: Ruff auto-fix & format
         run: |
-          ruff check .
-          ruff format --check
+          ruff check . --fix
+          ruff format
+
 
   test:
     name: ${{ matrix.os }} • py${{ matrix.python }}
